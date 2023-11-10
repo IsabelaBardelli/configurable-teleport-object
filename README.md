@@ -11,7 +11,7 @@ Configurable Teleport Object is a script designed for creating teleportation doo
 
 ## Getting Started
 
-1 **Configuring a object**: Create a new object in Second Life and create a notecard named `teleport_destination` and add the destination in the following format:
+1. **Configuring a object**: Create a new object in Second Life and create a notecard named `teleport_destination` and add the destination in the following format:
 DestinationSimName/128/128/128
 This represents the destination coordinates where users will be teleported.
 2. **Authorized Users Notecard**: Create a notecard named `authorized_users` and add the UUIDs of authorized users, one per line:
