@@ -11,16 +11,19 @@ Configurable Teleport Object is a script designed for creating teleportation doo
 
 ## Getting Started
 
-1. **Configuring a object**: Create a new object in Second Life and create a notecard named `teleport_destination` and add the destination in the following format:
-DestinationSimName/128/128/128
+1. **Configuring**: Copy the `lock.properties` notecard to the object, feel free to edit the messages or adjust them to your language:
+teleport.destination=<145,217,3501>
+security.user.add=isabela.evergarden
+localization.locked=${user} tried to open the door...
+localization.2locked="I won't be able to open it without a key" ${user} thinks.
+localization.open=${user} unlocks the door...
+security.user.add=anyuser.youwant
+
+2. **Security**: Using the tag `security.user.add` you can give permission to how many users you want (one per line)
 This represents the destination coordinates where users will be teleported.
-2. **Authorized Users Notecard**: Create a notecard named `authorized_users` and add the UUIDs of authorized users, one per line:
-UUID1
-UUID2
-UUID3
-3. **Localization Notecard**: Copy the `localization` notecard to the object, feel free to edit the messages or adjust them to your language:
-titulo=Text to be changed considering variables like ${owner}
-4. **Installation**: Copy the `configurable_teleport_object.lsl` script into the object's contents.
+
+3. `teleport.destination=<145,217,3501>` represents the position you want to move to.
+
 
 ## License
 
